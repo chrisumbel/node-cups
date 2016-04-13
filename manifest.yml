@@ -1,0 +1,8 @@
+---
+applications:
+- name: umbel-node-cups
+  buildpack: nodejs_buildpack
+  memory: 256M
+  command: node app.js
+  services:
+    - timesqlserver
